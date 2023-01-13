@@ -25,6 +25,7 @@ try:
     submit_button = browser.find_element(By.CSS_SELECTOR, '[type="submit"]')
 
     browser.execute_script('window.scrollBy(0, 100);')
+    # browser.execute_script('return arguments[0].scrollIntoView(true)', submit_button)
     text_input.send_keys(RESULT)
 
     for element in checkbox, radiobutton, submit_button:
