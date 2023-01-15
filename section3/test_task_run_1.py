@@ -2,11 +2,6 @@
 import pytest
 
 
-@pytest.fixture
-def browser():
-    pass
-
-
 class TestMainPage1:
     # Номер 1
     @pytest.mark.xfail
