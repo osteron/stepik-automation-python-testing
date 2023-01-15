@@ -15,7 +15,7 @@ def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default=browsers[0],
                      help='Choose browser: chrome or firefox')
     # По умолчанию локализация установлена в None
-    parser.addoption('--language', action='store', default='en',
+    parser.addoption('--language', action='store', default=None,
                      help=f'Choose language: {localizations}')
 
 
